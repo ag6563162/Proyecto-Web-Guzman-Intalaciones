@@ -1,6 +1,28 @@
+.encabezado{
+    padding-left: 100px;
+    background-color: rgba(3, 3, 158, 0.934);
+    color: orange;
+}
+
+.Materiales{
+    color: orange;
+}
+
+.Clientes{
+    color: orange;
+}
+
+.Configuración{
+    color: orange;
+}
+
+.Facturas{
+    color: orange;
+}
+
 .imag{
     position: absolute;
-    top: 30px;
+    top: ;
     right: 0;
     width: 250px;
     
