@@ -38,7 +38,7 @@
     <section class="content_2">
         <h2 class="titulo">Agregar producto</h1>
             <i class="fa-solid fa-cart-shopping"></i>
-        <input type="text" class="datos" placeholder="Nombre del producto"> <input type="number" class="cantidad" placeholder="Cantidad"> <input type="number" class="precio" placeholder="precio"> <button>+</button><br>
+        <input type="text" class="datos" placeholder="Nombre del producto"> <input type="number" class="cantidad" placeholder="Cantidad"> <input type="number" class="precio" placeholder="precio"> <button type="submit">+</button><br>
         <table class="tabla">
             <tr class="tabla_contenedor">
             <th>Productos</th>
@@ -46,6 +46,11 @@
             <th>Precios</th>
             </tr>
         </table>
+        <div>
+            <label for="total">Total</label>
+            <input type="text" name="total" id="total">
+            
+        </div>
     </section>
     </div>
     <div>
@@ -54,7 +59,10 @@
                 <i class="fa-solid fa-credit-card"></i>
             <input type="text" class="pago">
     </section>
-        
+        <br>
+        <div class="boton-guardar">
+        <button type="submit">Guardar Factura</button>
+        </div>
     </div>
     </form>
     </div>
