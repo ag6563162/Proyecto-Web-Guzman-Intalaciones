@@ -8,20 +8,7 @@
 .navbar{
     margin-top: 24px;
 }
-
-.Materiales{
-    color: orange;
-}
-
-.Clientes{
-    color: orange;
-}
-
-.Configuración{
-    color: orange;
-}
-
-.Facturas{
+.navbar a{
     color: orange;
 }
 
