@@ -27,6 +27,7 @@
     box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.1) ;
     border-radius: 5px;
     padding: 13px;
+    color: orange;
 
 }
 
@@ -36,6 +37,7 @@
     box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.1) ;
     border-radius: 5px;
     padding: 13px;
+    color: orange;
 }
 
 .tabla_contenedor th {
@@ -55,4 +57,16 @@
     box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.1) ;
     border-radius: 5px;
     padding: 13px;
+    color: orange;
 }
+
+.button{
+    background-color:rgba(3, 3, 158, 0.934);
+    color: white;
+}
+
+#fecha{
+    background-color: rgba(3, 3, 158, 0.934);
+    color: white;
+}
+
