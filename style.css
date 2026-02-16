@@ -1,5 +1,6 @@
 .encabezado{
     background-color: rgba(3, 3, 158, 0.934);
+    border-radius: 15px;
     color: orange;
     display: flex;
     justify-content: space-evenly;
@@ -45,11 +46,14 @@
     
 }
 
-.total {
-    margin-left: 600px;
-    
-
+.parrafos{
+    margin: 10px;
+    padding: 3px;
 }
+
+.total {
+    margin-left: 1100px;
+    }
 
 .forma_de_pago{
     margin: 10px;
