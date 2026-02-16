@@ -8,20 +8,7 @@
 .navbar{
     margin-top: 24px;
 }
-
-.Materiales{
-    color: orange;
-}
-
-.Clientes{
-    color: orange;
-}
-
-.Configuración{
-    color: orange;
-}
-
-.Facturas{
+.navbar a{
     color: orange;
 }
 
@@ -39,6 +26,7 @@
     border: 1px solid black;
     box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.1) ;
     border-radius: 5px;
+    padding: 13px;
 
 }
 
@@ -47,6 +35,7 @@
     border: 1px solid black;
     box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.1) ;
     border-radius: 5px;
+    padding: 13px;
 }
 
 .tabla_contenedor th {
@@ -54,9 +43,16 @@
     
 }
 
+.total {
+    margin-left: 600px;
+    
+
+}
+
 .forma_de_pago{
     margin: 10px;
     border: 1px solid black;
     box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.1) ;
     border-radius: 5px;
+    padding: 13px;
 }
