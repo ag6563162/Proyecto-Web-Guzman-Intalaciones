@@ -10,6 +10,8 @@
     margin-top: 24px;
 }
 .navbar a{
+    margin: 8px; 
+    text-decoration: none;
     color: orange;
 }
 
@@ -70,9 +72,10 @@
 }
 
 #fecha{
+    border-radius: 3px;
     background-color: rgba(3, 3, 158, 0.934);
     color: white;
     padding: 3px;
-    margin: 10px;
+    margin: 0;
 }
 
