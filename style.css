@@ -1,7 +1,11 @@
+:root{
+    --azul:#082a89 ;
+    --naranja:#ffa500; 
+}
 .encabezado{
-    background-color: rgba(3, 3, 158, 0.934);
+    background-color: var(--azul);
     border-radius: 15px;
-    color: orange;
+    color: var(--naranja);
     display: flex;
     justify-content: space-evenly;
 }
@@ -12,7 +16,7 @@
 .navbar a{
     margin: 8px; 
     text-decoration: none;
-    color: orange;
+    color: var(--naranja);
 }
 
 .imag{
@@ -30,7 +34,7 @@
     box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.1) ;
     border-radius: 5px;
     padding: 13px;
-    color: orange;
+    color: var(--naranja);
 
 }
 
@@ -40,10 +44,11 @@
     box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.1) ;
     border-radius: 5px;
     padding: 13px;
-    color: orange;
+    color: var(--naranja);
 }
 
 .tabla_contenedor th {
+    text-decoration: underline;
     padding-left: 80px;
     
 }
@@ -63,19 +68,26 @@
     box-shadow: 6px 6px 7px rgba(0, 0, 0, 0.1) ;
     border-radius: 5px;
     padding: 13px;
-    color: orange;
+    color: var(--naranja);
 }
 
 .button{
-    background-color:rgba(3, 3, 158, 0.934);
+    background-color: var(--azul);
     color: white;
 }
 
 #fecha{
-    border-radius: 3px;
-    background-color: rgba(3, 3, 158, 0.934);
-    color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+    color: var(--naranja);
     padding: 3px;
     margin: 0;
+}
+.guardar{
+    margin-left: 10px;
+    border-radius: 3px;
+    border: 1px solid black;
+    background-color: whitesmoke;
 }
 
