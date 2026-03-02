@@ -1,4 +1,4 @@
-let datoscliente = [{
+ let datoscliente = [] /* [{
     nombre: "jose",
     telefono: "234-567-5432",
     direccion: "calle #10 barrio juanito"
@@ -7,7 +7,7 @@ let datoscliente = [{
     telefono:"876-098-2345",
     direccion: "calle 2 barrio pedro"
     
-}]
+}] */ 
 
 function agregarcliente() {
     let nombre = document.getElementById('nombre').value;
@@ -38,10 +38,8 @@ function mostrarcliente() {
     resultado.innerHTML = '';
 
     for (let i = 0; i < datoscliente.length; i++) {
-        resultado.innerHTML += `<p>Nombre: ${datoscliente[i].nombre} </p>`;
-        resultado.innerHTML += `<p>Telefono: ${datoscliente[i].telefono} </p>`;
-        resultado.innerHTML += `<p>Direccion: ${datoscliente[i].direccion} </p>`;
-        resultado.innerHTML += `=<hr>`;
+        resultado.innerHTML += `<p>Nombre: ${datoscliente[i].nombre} - Telefono: ${datoscliente[i].telefono} - Direccion: ${datoscliente[i].direccion} </p>`;
+        resultado.innerHTML += `<hr>`;
         
     };
 };
