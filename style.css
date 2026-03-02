@@ -28,6 +28,38 @@
     
 }
 
+.nombre{
+    margin: 3px;
+    width: 20%;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.telefono{
+    margin: 3px;
+    width: 20%;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.direccion{
+    margin: 3px;
+    width: 20%;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#resultado{
+    width: 250px;
+    background: #fff;
+    margin-top: 15px;
+    padding: 25px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+
+
+}
+
 .content{
     margin: 10px;
     border: 1px solid black;
@@ -49,8 +81,36 @@
 
 .tabla_contenedor th {
     text-decoration: underline;
-    padding-left: 80px;
+    text-align: left;
+    padding: 10px;
     
+}
+.tabla_contenedor td {
+    text-align: left;
+    padding: 10px;
+    vertical-align: middle;
+    
+}
+
+.producto{
+    margin: 3px;
+    width: 20%;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.precio{
+    margin: 3px;
+    width: 20%;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.cantidad{
+    margin: 3px;
+    width: 20%;
+    padding: 5px;
+    border-radius: 4px;
 }
 
 .parrafos{
@@ -84,6 +144,14 @@
     padding: 3px;
     margin: 0;
 }
+
+.pago{
+   margin: 3px;
+   width: 20%;
+   padding: 5px;
+   border-radius: 4px;  
+}
+
 .guardar{
     margin-left: 10px;
     border-radius: 3px;

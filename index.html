@@ -27,29 +27,43 @@
         </div>
     </div>
     <div class="caja_contenedor">
-          <form action="" method="post">
+          <form action="" method="post" >
     <div>
-    <section class="content">
+    <section class="content" id="datosclientes">
         <h2 class="titulo">Datos del cliente</h1>
         <i class="fa-solid fa-user"></i>
-        <input type="text" class="datos" id="datos" placeholder="Datos del cliente">
+        <input type="text" class="nombre" id="nombre" placeholder="Nombre">
+        <input type="texto" class="telefono" id="telefono" placeholder="Telefono">
+        <input type="text" class="direccion" id="direccion" placeholder="Direccion">
+        <input type="button" class="agregarclientes" value="Agregar cliente" onclick="agregarcliente()">
+        <input type="button" class="mostrarcliente" value="Mostrar cliente" onclick="mostrarcliente()">
+        <div id="resultado"></div>
     </section>
     </div>
     <div>
     <section class="content_2">
         <h2 class="titulo">Agregar producto</h2>
+        <div class="inputs">
             <i class="fa-solid fa-cart-shopping"></i>
-        <input type="text" class="producto" placeholder="Nombre del producto"> <input type="number" class="cantidad" placeholder="Cantidad"> <input type="number" class="precio" placeholder="precio"> <button class="button" type="submit">+</button><br>
-        <table class="tabla">
+        <input type="text" class="producto" id="producto" placeholder="Nombre del producto"> 
+        <input type="number" class="cantidad" id="cantidad" placeholder="Cantidad"> 
+        <input type="text" class="precio" id="precio" placeholder="precio"> 
+        <input type="button" value="+" id="agregarproducto" class="button">
+        </div>
+        <table class="tabla" id="tabla">
+            <thead>
             <tr class="tabla_contenedor">
-            <th>Productos</th>
-            <th>Cantidad</th>
-            <th>Precios</th>
+            <th class="producto">Productos</th>
+            <th class="cantidad">Cantidad</th>
+            <th class="precio">Precios</th>
+            <th class="sub-total">Sub-Total</th>
             </tr>
+            </thead>
+            <tbody id="cuerpoTabla"></tbody>
         </table>
         <div class="total">
             <label for="total">Total:</label>
-            <input type="text" name="total" id="total">
+            <input type="text" name="total" id="inputTotal" readonly>
             
         </div>
     </section>
@@ -58,7 +72,11 @@
         <section class="forma_de_pago">
             <h2 class="titulo">Método de pago</h1>
                 <i class="fa-solid fa-credit-card"></i>
-            <input type="text" class="pago">
+            <input type="text" class="pago" list="opcionespago">
+            <datalist id="opcionespago">
+                <option value="Efectivo">
+                <option value="Tarjeta">
+            </datalist>
     </section>
         <br>
         <div class="boton-guardar">
@@ -67,5 +85,7 @@
     </div>
     </form>
     </div>
+    <script src="app.js"></script>
+    <script src="productos.js"></script>
 </body>
 </html>
