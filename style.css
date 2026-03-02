@@ -50,10 +50,10 @@
 }
 
 #resultado{
-    width: 250px;
+    width: 45%;
     background: #fff;
-    margin-top: 15px;
-    padding: 25px;
+    margin-top: 5px;
+    padding: 15px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     border-radius: 6px;
 
