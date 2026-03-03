@@ -79,6 +79,10 @@
     color: var(--naranja);
 }
 
+.tabla{
+    width: 100%;
+}
+
 .tabla_contenedor th {
     text-decoration: underline;
     text-align: left;

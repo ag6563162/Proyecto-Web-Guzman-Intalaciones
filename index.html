@@ -56,7 +56,7 @@
             <th class="producto">Productos</th>
             <th class="cantidad">Cantidad</th>
             <th class="precio">Precios</th>
-            <th class="sub-total">Sub-Total</th>
+            <th class="subtotal" id="subtotal">Sub-Total</th>
             </tr>
             </thead>
             <tbody id="cuerpoTabla"></tbody>
@@ -80,7 +80,7 @@
     </section>
         <br>
         <div class="boton-guardar">
-        <button class="guardar" type="submit">Guardar Factura</button>
+        <button class="guardar" type="button" id="guardar" onclick="guardarDatos()">Guardar Factura</button>
         </div>
     </div>
     </form>

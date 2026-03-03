@@ -19,27 +19,28 @@ let productoInput = document.querySelector('#producto');
 let precioInput = document.querySelector('#precio');
 let cantidadInput = document.querySelector('#cantidad');
 
-agregarproducto.addEventListener('click', () => {
+    agregarproducto.addEventListener('click', () => {
     let producto = productoInput.value;
     let precio = precioInput.value;
     let cantidad = cantidadInput.value;
 
-    let resultado = cantidad * precio;
+    let subtotal = cantidad * precio;
 
     let template = `
             <tr>
             <td>${producto}</td>
             <td>${cantidad}</td>
             <td>${precio}</td>
-            <td> ${resultado}</td>
+            <td> ${subtotal}</td>
             </tr>
     `
 
     table.innerHTML += template;
 
     let valorTotal = document.getElementById('inputTotal');
-    if (resultado > 0) {
-    valorTotal.value = resultado;
+    if (subtotal > 0) {
+    valorTotal.value = subtotal;
+    console.log(subtotal)
 };
 });
 

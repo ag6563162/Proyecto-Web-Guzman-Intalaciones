@@ -44,4 +44,15 @@ function mostrarcliente() {
     };
 };
 
-mostrarcliente()
+mostrarcliente();
+
+function guardarDatos() {
+ 
+    let producto = {
+        producto: document.getElementById('producto').value,
+        precio: document.getElementById('precio').value,
+        cantidad: document.getElementById('cantidad').value,
+    }
+    console.log(producto);
+    
+};
