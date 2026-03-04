@@ -56,3 +56,6 @@ function guardarDatos() {
     console.log(producto);
     
 };
+
+const fecha = new Date();
+document.getElementById("fecha").value = fecha.toISOString().split("T")[0];

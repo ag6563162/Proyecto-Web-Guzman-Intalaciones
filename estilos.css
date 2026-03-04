@@ -1,0 +1,54 @@
+:root{
+    --azul:#082474 ;
+    --naranja:#ffa500; 
+}
+
+.encabezado{
+    background-color: var(--azul);
+    border-radius: 15px;
+    color: var(--naranja);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar{
+    margin-top: 24px;
+}
+.navbar a{
+    margin: 8px; 
+    text-decoration: none;
+    color: var(--naranja);
+}
+
+body{
+
+}
+
+table{
+    border-collapse: collapse;
+    cursor: pointer;
+    width: 60%;
+    margin: 50px auto 0px auto;
+}
+
+td,th{
+    padding: 10px;
+    text-align: center;
+}
+
+tr:hover{
+    background-color: #ffa500;
+    color: #fff;
+}
+
+table thead{
+    background-color: #082474;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+table tbody{
+    background-color: #d0e9fc;
+    border: 1px solid #fff;
+}
+
