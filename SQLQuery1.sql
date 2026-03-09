@@ -13,7 +13,6 @@ BEGIN
 	  fecha DATETIME2(0) NOT NULL
 	  );
 
-
 END 
 GO
 
