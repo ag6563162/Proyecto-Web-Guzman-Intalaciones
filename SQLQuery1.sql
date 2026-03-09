@@ -45,8 +45,8 @@ CREATE TABLE metodo_pago (
   ('tarjeta'),
   ('Transferencia');
 
-  END 
-  GO
+END 
+GO
 
 
 USE Proyecto_Web_Guzman_Intalaciones
@@ -65,8 +65,8 @@ CREATE TABLE factura (
   FOREIGN KEY (metodo_pago_id) REFERENCES metodo_pago(id)
   );
 
- END
- GO
+END
+GO
 
  USE Proyecto_Web_Guzman_Intalaciones
 BEGIN
@@ -80,5 +80,5 @@ CREATE TABLE detalle_factura (
   FOREIGN KEY (factura_id) REFERENCES factura(id),
   FOREIGN KEY (productos_id) REFERENCES productos_materiales(codigo)
   );
-  END 
-  GO
+END 
+GO
