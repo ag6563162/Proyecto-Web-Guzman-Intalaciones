@@ -23,21 +23,22 @@
             <P>Tel: 809-761-3393</P>
             <P>guzmaninstalaciones@gmail.com</P>
             <P>C/10, #10, Ricardo Tejada, Santiago, Rep. Dom</P>
-            <input type="date" name="fecha" id="fecha">
+           
         </div>
     </div>
     <div class="caja_contenedor">
           <form action="/guardar" method="post" id="formulario">
+            <input type="date" name="fecha" id="fecha">
     <div>
     <section class="content" id="datosclientes">
         <h2 class="titulo">Datos del cliente</h1>
         <i class="fa-solid fa-user"></i>
-        <input type="text" class="nombre" id="nombre" placeholder="Nombre" required>
-        <input type="texto" class="telefono" id="telefono" placeholder="Telefono" required>
-        <input type="text" class="direccion" id="direccion" placeholder="Direccion" required>
-        <input type="button" class="agregarclientes" value="Agregar cliente" onclick="agregarcliente()">
-        <input type="button" class="mostrarcliente" value="Mostrar cliente" onclick="mostrarcliente()">
-        <div id="resultado"></div>
+        <input type="text" class="nombre" id="nombre" name="nombre" placeholder="Nombre" required>
+        <input type="text" class="telefono" id="telefono" name="telefono" placeholder="Telefono" required>
+        <input type="text" class="direccion" id="direccion" name="direccion" placeholder="Direccion" required>
+        <!-- <input type="button" class="agregarclientes" value="Agregar cliente" onclick="agregarcliente()">
+        <input type="button" class="mostrarcliente" value="Mostrar cliente" onclick="mostrarcliente()"> -->
+       <!--  <div id="resultado"></div> -->
     </section>
     </div>
     <div>
@@ -45,9 +46,9 @@
         <h2 class="titulo">Agregar producto</h2>
         <div class="inputs">
             <i class="fa-solid fa-cart-shopping"></i>
-        <input type="text" class="producto" id="producto" placeholder="Nombre del producto" required> 
-        <input type="number" class="cantidad" id="cantidad" placeholder="Cantidad" required> 
-        <input type="text" class="precio" id="precio" placeholder="precio" required> 
+        <input type="text" class="producto" id="producto" name="materiales" placeholder="Nombre del producto" required> 
+        <input type="number" class="cantidad" id="cantidad" name="cantidad" placeholder="Cantidad" required> 
+        <input type="text" class="precio" id="precio" name="precio" placeholder="precio" required> 
         <input type="button" value="+" id="agregarproducto" class="button">
         </div>
         <table class="tabla" id="tabla">
@@ -81,12 +82,11 @@
     </section>
         <br>
         <div class="boton-guardar">
-        <button class="guardar" type="button" id="guardar" action="/guardar" onclick="guardarDatos()">Guardar Factura</button>
+        <button class="guardar" type="submit" id="guardar">Guardar Factura</button>
         </div>
     </div>
     </form>
     </div>
     <script src="app.js"></script>
-    <script src="productos.js"></script>
 </body>
 </html>

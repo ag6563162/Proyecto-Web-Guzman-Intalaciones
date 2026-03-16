@@ -1,60 +1,35 @@
- let datoscliente = [] /* [{
-    nombre: "jose",
-    telefono: "234-567-5432",
-    direccion: "calle #10 barrio juanito"
-},{
-    nombre: "juan",
-    telefono:"876-098-2345",
-    direccion: "calle 2 barrio pedro"
+ let aagregarproducto = document.querySelector('button');
+let table = document.querySelector('#cuerpoTabla');
+
+let productoInput = document.querySelector('#producto');
+let precioInput = document.querySelector('#precio');
+let cantidadInput = document.querySelector('#cantidad');
+
+let totalGeneral = 0
+
+    agregarproducto.addEventListener('click', () => {
+    let producto = productoInput.value;
+    let precio = Number(precioInput.value);
+    let cantidad = Number(cantidadInput.value);
     
-}] */ 
+    let subtotal = cantidad * precio;
 
-function agregarcliente() {
-    let nombre = document.getElementById('nombre').value;
-    let telefono = document.getElementById('telefono').value;
-    let direccion = document.getElementById('direccion').value;
+    let template = `
+            <tr>
+            <td>${producto}</td>
+            <td>${cantidad}</td>
+            <td>${precio}</td>
+            <td class="subtotal"> ${subtotal}</td>
+            </tr>
+    `
 
-    datoscliente.push({
-        nombre: nombre,
-        telefono: telefono,
-        direccion: direccion 
-        
-    });
+    table.innerHTML += template;
 
-    alert("Cliente agregado exitosamente!");
-
-    let ultimo = datoscliente.length -1;
-    
-    console.log(`${datoscliente[0].nombre} - ${datoscliente[0].telefono} - ${datoscliente[0].direccion}`);
-    console.log(`${datoscliente[ultimo].nombre} - ${datoscliente[ultimo].telefono} - ${datoscliente[ultimo].direccion}`);
-
-    document.getElementById('nombre').value = "";
-    document.getElementById('telefono').value = "";
-    document.getElementById('direccion').value = "";    
-};
-function mostrarcliente() {
-    let resultado = document.getElementById('resultado');
-    resultado.innerHTML = '';
-
-    for (let i = 0; i < datoscliente.length; i++) {
-        resultado.innerHTML += `<p>Nombre: ${datoscliente[i].nombre} - Telefono: ${datoscliente[i].telefono} - Direccion: ${datoscliente[i].direccion} </p>`;
-        resultado.innerHTML += `<hr>`;
-        
-    };
-};
-
-mostrarcliente();
-
-function guardarDatos() {
- 
-    let producto = {
-        producto: document.getElementById('producto').value,
-        precio: document.getElementById('precio').value,
-        cantidad: document.getElementById('cantidad').value,
-    }
-    console.log(producto);
-    
-};
+    let valorTotal = document.getElementById('inputTotal');
+    totalGeneral += subtotal;
+    valorTotal.value = totalGeneral;
+    console.log(totalGeneral);
+});
 
 const fecha = new Date();
 
