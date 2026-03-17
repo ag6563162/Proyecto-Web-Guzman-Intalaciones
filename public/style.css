@@ -140,13 +140,13 @@
     color: white;
 }
 
-#fecha{
+.fecha{
     border: 1px solid black;
     border-radius: 4px;
     background-color: white;
     color: var(--naranja);
     padding: 3px;
-    margin: 0;
+    margin-left: 10px;
 }
 
 .pago{
