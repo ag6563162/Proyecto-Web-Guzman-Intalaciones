@@ -22,6 +22,8 @@ BEGIN
  CREATE TABLE productos_materiales (
     codigo INT IDENTITY (1,1) PRIMARY KEY,
 	materiales VARCHAR (150) NOT NULL,
+	cantidad VARCHAR (150) NOT NULL,
+	subtotal DECIMAL (12,2),
 	precio DECIMAL (10,2) NOT NULL,
 	itbis DECIMAL (5,2) DEFAULT 20.00
 	);
